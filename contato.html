@@ -26,25 +26,25 @@
                     <div class="campos-form">
                         <label for="nome">Nome:</label>
                         <input id="nome" name="nome" type="text"
-                            placeholder="Insira o seu nome completo">
+                            placeholder="Insira o seu nome completo" onkeyup="validaNome()">
                         <div id="txtNome"></div>
                     </div>
 
                     <div class="campos-form">
                         <label for="email">E-mail:</label>
                         <input id="email" name="email" type="text"
-                            placeholder="Insira o seu e-mail">
+                            placeholder="Insira o seu e-mail" onkeyup="validaEmail()">
                         <div id="txtEmail"></div>
                     </div>
 
                     <div class="campos-form">
                         <label for="mensagem">Mensagem:</label>
                         <textarea id="mensagem" name="mensagem" rows="8"
-                            placeholder="Deixe sua mensagem..."></textarea>
+                            placeholder="Deixe sua mensagem..." onkeyup="validaMensagem()"></textarea>
                         <div id="txtMensagem"></div>
                     </div>
 
-                    <button type="button">
+                    <button type="button" onclick="enviarForm()">
                         Enviar
                     </button>
 
@@ -58,7 +58,7 @@
                 <div class="campos-form">
                     <label for="cep">CEP:</label>
                     <input id="cep" name="cep" type="text"
-                        placeholder="Digite o número do CEP">
+                        placeholder="Digite o número do CEP" onkeyup="validarCep()">
                     <div id="txtCep"></div>
                 </div>
                 <button type="button" onclick="consultarCep()">
@@ -90,5 +90,7 @@
             </div>
             <p>Desenvolvido por Cinthia - 2023 &copy;</p>
         </footer>
+
+        <script src="assets/js/script.js"></script>
 </body>
 </html>
